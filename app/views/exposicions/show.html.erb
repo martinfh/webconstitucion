@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<div class="boton_atras">
+				<%= link_to 'Atrás', exposicions_path %>
+</div>
+<div class="contenedor_muestras">
+<p>
+  <strong>
+  <%= @exposicion.titulo_expo %></strong>
+</p>
+
+<p>
+  <%= @exposicion.fechas %>
+</p>
+
+<p>
+  <i>Texto de sala</i><br>
+  <%= @exposicion.texto %>
+</p>
+<p>
+  <strong>Imagenes expo:</strong><br>
+  <%=@exposicion.imagenes_expo %>
+</p>
+</div>

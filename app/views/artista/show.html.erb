@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<p id="notice"><%= notice %></p>
+			<div class="boton_atras">
+				<%= link_to 'Atrás', artista_path %>
+			</div>
+	</head>
+	<body>
+		<div>
+			<div class="header_artista">
+				<%= @artistum.nombre %>
+			</div>
+			<div class="cuerpo_artistxs">
+		  			<%= @artistum.cv %>
+				<div>
+				
+  					<%=image_tag @artistum.imagen%> 	
+  						
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!--
+	<%= link_to 'Edit', edit_artistum_path(@artistum) %>-->

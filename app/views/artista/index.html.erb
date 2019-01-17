@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <div class="boton_atras">
+        <%= link_to 'Atrás', pagina_inicio_path %>
+      </div>
+    <title>ARTISTXS</title>
+  </head>
+  <body>
+    <div class="botones_artistas" style="align-content: center;">
+      <div class="tab">
+        <% @artista.each do |artistum| %>
+            <button>
+              <%=link_to artistum.nombre, artistum_path(artistum.id),:class=>"links_artistxs"%>
+            </button>
+        <% end %>
+      </div>
+    </div>
+
+  </body>
+</html>

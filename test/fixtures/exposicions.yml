@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo_expo: MyString
+  fechas: MyString
+  texto: MyString
+  imagenes_expo: MyString
+
+two:
+  titulo_expo: MyString
+  fechas: MyString
+  texto: MyString
+  imagenes_expo: MyString
