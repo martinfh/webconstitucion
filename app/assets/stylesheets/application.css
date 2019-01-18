@@ -253,7 +253,7 @@ background: url("http://api.thumbr.it/whitenoise-361x370.png?background=4f4605ff
 /* Style the buttons that are used to open the tab content */
 .tab button {
     text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
-    font-family: sans-serif; helvetica;
+    font-family: sans-serif, helvetica;
     font-weight: bold;
     font-size: 15px;
     text-decoration: none;
