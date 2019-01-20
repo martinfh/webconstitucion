@@ -18,6 +18,10 @@
 </p>
 <p>
   <strong>Imagenes expo:</strong><br>
-  <%=@exposicion.imagenes_expo %>
+  <div>
+			<%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>
+			<%= image_tag(@exposicion.thumbnail(imagenes_expo))%>
+			</div>
+			<%end%>
 </p>
 </div>

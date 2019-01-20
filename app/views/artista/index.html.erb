@@ -13,10 +13,19 @@
         <% @artista.each do |artistum| %>
             <button>
               <%=link_to artistum.nombre, artistum_path(artistum.id),:class=>"links_artistxs"%>
+              <p> 
+              <%=if user_signed_in?
+          link_to 'Eliminar', artistum, method: :delete, data: { confirm: 'Are you sure?' }
+                end%>
+              </p>
             </button>
-        <% end %>
+            <% end %>
       </div>
     </div>
-
+              <div> 
+              <%=if user_signed_in?
+          link_to 'Nuevo Artistx', new_artistum_path
+                end%>
+              </div>
   </body>
 </html>
