@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
 .contenedor_muestras{
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -43,7 +42,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     text-decoration: none;
  }
 
