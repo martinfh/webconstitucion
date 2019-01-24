@@ -5,25 +5,43 @@
 			<div class="boton_atras">
 				<%= link_to 'Atrás', artista_path %>
 			</div>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 	</head>
 	<body>
 		<div>
 			<p class="header_artista">
-				<%= @artistum.nombre %>
-			</p>
-			<p class="cuerpo_artistxs" style="width: 700px;padding-right: 60px;">
-		  			<%= @artistum.cv %>
-			
-			</p>
+				<%= @artistum.nombre %></p>
+			<p class="cuerpo_artistxs">
+		  			<%= @artistum.cv %></p>
 		</div>
-			
-		
-			<div>
-				<%(0...@artistum.imagen.count).each do |imagen|%>
-				<%= image_tag(@artistum.thumbnail(imagen))%>	
-				<%end%>
+		&nbsp
+		<div class="visordeimagenes">
+			SELECCIÓN DE OBRAS
+			<div class="slider single-item">
+					<%(0...@artistum.imagen.count).each do |imagen|%>
+				<div class="slides">
+					<%= image_tag(@artistum.thumbnail(imagen))%>
+				</div>
+					<%end%>			
 			</div>
-		
+		 </div>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	  $('.slider').slick({
+	    center-mode: true
+	  });
+	});
+	</script>
+	<script>
+	$(function () {
+	  $('.slider').slick();
+	});
+	$('.single-item').slick();
+	</script>
+				
 	</body>
 </html>
 <!--

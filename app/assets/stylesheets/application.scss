@@ -13,6 +13,70 @@
  *= require_tree .
  *= require_self
  */
+ @import 'slick';
+ @import 'slick-theme';
+.slides{
+}
+.slider {
+    padding-top: 10px;
+}
+.visordeimagenes{
+    display: float;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    width: 65%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+}
+.caja_contacto{
+    float: left;
+    width: 50%;
+    padding: 35px;
+    background-color: rgba(86, 86, 86, 0.5)
+}
+ .header_contacto{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "vacio atras"
+ }
+
+ .atras{
+    grid-area: atras;
+    text-align: right;
+ }
+
+ .column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
 .contenedor_muestras{
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -48,12 +112,14 @@
 
  .cuerpo_artistxs{
     color: #fff;
-    float: left;
+    flex: center;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: lighter;
     text-decoration: none;
-    width: 45%;
+    text-align: justify;
+    width: 70%;
+    padding-right: 60px;
  }
  
 .field{
@@ -206,10 +272,12 @@ animation: fadeout 1s;
     font-weight: lighter;
 }
 .texto_contenedor_sobrenos{
+
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: lighter;
     text-decoration: none;
+    text-align: justify;
 }
 .contenedor_sobrenosotros {
     float: center;
@@ -227,7 +295,7 @@ animation: fadeout 1s;
     height: auto;
     text-shadow: 10px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 .background {
 background: url("http://api.thumbr.it/whitenoise-361x370.png?background=4f4605ff&noise=1c011c&density=93&opacity=37")

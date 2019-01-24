@@ -13,6 +13,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery.slick
 //= require_tree .
 #= require jquery
 #= require jquery_ujs
@@ -23,9 +24,12 @@
 import * as ActiveStorage from "activestorage"
 ActiveStorage.start()
 
-// direct_uploads.js
- 
-
+$(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+});
+  // direct_uploads.js
 addEventListener("direct-upload:initialize", event => {
   const { target, detail } = event
   const { id, file } = detail
