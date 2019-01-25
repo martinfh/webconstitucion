@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="boton_atras">
-				<%= link_to 'Atrás', pagina_inicio_path %>
-</div>
+				<%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), pagina_inicio_path %>
+			</div>
 <div class="recuadro_muestras">
     	<% @exposicions.each do |exposicion| %>
       	<%= link_to exposicion.titulo_expo, exposicion_path(exposicion.id), :class => "muestras"%>
