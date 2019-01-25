@@ -1,27 +1,42 @@
-<p id="notice"><%= notice %></p>
-<div class="boton_atras">
-				<%= link_to 'Atrás', exposicions_path %>
-</div>
-<div class="contenedor_muestras">
-<p>
-  <strong>
-  <%= @exposicion.titulo_expo %></strong>
-</p>
-
-<p>
-  <%= @exposicion.fechas %>
-</p>
-
-<p>
-  <i>Texto de sala</i><br>
-  <%= @exposicion.texto %>
-</p>
-<p>
-  <strong>Imagenes expo:</strong><br>
-  <div>
-			<%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>
-			<%= image_tag(@exposicion.thumbnail(imagenes_expo))%>
-			</div>
-			<%end%>
-</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <p id="notice"><%= notice %></p>
+  <div class="boton_atras">
+          <%= link_to 'Atrás', exposicions_path %>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  </div>
+</head>
+<body>
+  <div class="contenedor_muestras">
+  <p>
+    <strong><%= @exposicion.titulo_expo %></strong></p>
+    <p><%= @exposicion.fechas %></p>
+    <p><i>Texto de sala</i><br>
+        <%= @exposicion.texto %></p>
+    <p>
+    <strong>IMAGENES EXPO:</strong><br></p>
+      <div class="slider">
+        <%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>
+        <div class="slides">
+          <%= image_tag(@exposicion.thumbnail(imagenes_expo))%>
+        </div>
+      </div>
+          <%end%>
+   </div>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.slider').slick({
+    });
+  });
+  </script>
+  <script>
+  $(function () {
+    $('.slider').slick();
+  });
+  $('.single-item').slick();
+  </script>
+</body>
+</html>
