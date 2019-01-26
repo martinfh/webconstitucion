@@ -5,8 +5,7 @@
 			<div class="boton_atras">
 				<%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), artista_path %>
 			</div>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body>
 		<div>
@@ -18,29 +17,35 @@
 		&nbsp
 		<div class="visordeimagenes">
 			SELECCIÓN DE OBRAS
-			<div class="slider single-item">
+			<div class="w3-content w3-display-container">
 					<%(0...@artistum.imagen.count).each do |imagen|%>
-				<div class="slides">
+				<div class="mySlides">
+					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 					<%= image_tag(@artistum.thumbnail(imagen))%>
+					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 				</div>
 					<%end%>			
 			</div>
 		 </div>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-	</script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-	  $('.slider').slick({
-	    center-mode: true
-	  });
-	});
-	</script>
-	<script>
-	$(function () {
-	  $('.slider').slick();
-	});
-	$('.single-item').slick();
-	</script>
+     var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+   </script>
 				
 	</body>
 </html>
