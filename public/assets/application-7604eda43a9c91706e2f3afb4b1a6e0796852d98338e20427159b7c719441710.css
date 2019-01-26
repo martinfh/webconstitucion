@@ -1,0 +1,496 @@
+/* line 1, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.slider {
+  padding-top: 10px;
+}
+
+/* line 21, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.visordeimagenes {
+  display: float;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14%;
+  width: 65%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+}
+
+/* line 34, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.caja_contacto {
+  float: left;
+  width: 50%;
+  padding: 35px;
+  background-color: rgba(86, 86, 86, 0.5);
+}
+
+/* line 40, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.header_contacto {
+  display: grid;
+  grid-template-columns: 50%,50%;
+  grid-template-areas: "vacio atras";
+}
+
+/* line 46, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.atras {
+  grid-area: atras;
+  text-align: right;
+}
+
+/* line 51, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+/* line 61, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+/* line 67, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+/* line 74, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* line 80, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.contenedor_muestras {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* line 86, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.cuerpo_contacto {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+/* line 92, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.header_contacto {
+  text-align: right;
+}
+
+/* line 96, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.boton_atras {
+  text-align: right;
+}
+
+/* line 99, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.header_artista {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+/* line 108, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.cuerpo_artistxs {
+  color: #fff;
+  flex: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: justify;
+  width: 70%;
+  padding-right: 60px;
+}
+
+/* line 120, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.field {
+  color: white;
+}
+
+/* unvisited link */
+/* line 125, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:link {
+  color: white;
+}
+
+/* visited link */
+/* line 130, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:visited {
+  color: white;
+}
+
+/* mouse over link */
+/* line 135, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:hover {
+  color: white;
+  font-size: 17px;
+  background: none;
+}
+
+/* selected link */
+/* line 142, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:active {
+  color: white;
+}
+
+/* line 145, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:link {
+  color: white;
+}
+
+/* visited link */
+/* line 150, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+/* line 155, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:hover {
+  color: white;
+  font-size: 29px;
+  background: none;
+}
+
+/* selected link */
+/* line 162, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:active {
+  color: white;
+}
+
+/* line 165, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+
+/* line 171, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadeinlargo {
+  animation: fadein 2s;
+}
+
+/* line 175, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadeoutlargo {
+  animation: fadeout 2s;
+}
+
+@keyframes fadeinlargo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeoutlargo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 187, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadein {
+  animation: fadein 1s;
+}
+
+/* line 191, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadeout {
+  animation: fadeout 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 202, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_muestras {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Merriwheather', serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+/* line 210, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.recuadro_muestras {
+  float: left;
+  width: 50%;
+  border: 1px;
+  border-style: solid;
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 221, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.muestras {
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 227, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.muestras:hover {
+  font-size: 21px;
+  color: grey;
+  text-align: center;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 235, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_sobrenos {
+  font-size: 27px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+/* line 244, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_artistxs {
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
+}
+
+/* line 253, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_muestras {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+/* line 262, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_contacto {
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+/* line 270, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_contenedor_sobrenos {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: justify;
+}
+
+/* line 278, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.contenedor_sobrenosotros {
+  float: center;
+  width: 70%;
+  color: white;
+}
+
+/* line 284, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.menuinicio {
+  text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
+  padding: 100px;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  width: 50%;
+  height: auto;
+  text-decoration: none;
+}
+
+/* line 295, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.background {
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=4f4605ff&noise=1c011c&density=93&opacity=37");
+}
+
+/* line 303, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the tab */
+/* line 306, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.tab {
+  color: white;
+  font-size: 20px;
+  float: left;
+  border: 1px solid #ccc;
+  width: 30%;
+  height: auto;
+  text-decoration: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+/* line 316, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.tab button {
+  text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
+  font-family: sans-serif, helvetica;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  background-color: inherit;
+  color: red;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: crosshair;
+  transition: 0.3s;
+}
