@@ -1,0 +1,812 @@
+/* line 1, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* Slider */
+/* line 2, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 21, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 35, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 41, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 51, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 61, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+/* line 68, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 72, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 77, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* line 85, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+/* line 89, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-slide img {
+  display: block;
+}
+
+/* line 93, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 97, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 101, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 105, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 109, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 117, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick.css */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* line 3, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-loading .slick-list {
+  background: #fff url(/assets/slick/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url(/assets/slick-06d80cf01250132fd1068701108453feee68854b750d22c344ffc0de395e1dcb.eot);
+  src: url(/assets/slick-06d80cf01250132fd1068701108453feee68854b750d22c344ffc0de395e1dcb.eot?#iefix) format("embedded-opentype"), url(/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff) format("woff"), url(/assets/slick-37bc99cfdbbc046193a26396787374d00e7b10d3a758a36045c07bd8886360d2.ttf) format("truetype"), url(/assets/slick-8ca11b5fcbff92ee6378017cf6832dddfa745253202d7c8d01f42d5d17c4cb5c.svg#slick) format("svg");
+}
+/* Arrows */
+/* line 22, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* line 45, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+/* line 54, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 61, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+/* line 67, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 81, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev {
+  left: -25px;
+}
+
+/* line 85, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+/* line 90, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:before {
+  content: '←';
+}
+
+/* line 94, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-prev:before {
+  content: '→';
+}
+
+/* line 99, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-next {
+  right: -25px;
+}
+
+/* line 103, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+/* line 108, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-next:before {
+  content: '→';
+}
+
+/* line 112, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-next:before {
+  content: '←';
+}
+
+/* Dots */
+/* line 118, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 123, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 137, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 150, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 168, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 173, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 178, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 200, /Users/martinfh/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/jquery-slick-rails-1.9.0/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/* line 20, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.slider {
+  padding-top: 10px;
+}
+
+/* line 23, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.visordeimagenes {
+  display: float;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  width: 65%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+}
+
+/* line 36, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.caja_contacto {
+  float: left;
+  width: 50%;
+  padding: 35px;
+  background-color: rgba(86, 86, 86, 0.5);
+}
+
+/* line 42, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.header_contacto {
+  display: grid;
+  grid-template-columns: 50%,50%;
+  grid-template-areas: "vacio atras";
+}
+
+/* line 48, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.atras {
+  grid-area: atras;
+  text-align: right;
+}
+
+/* line 53, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+/* line 63, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+/* line 69, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+/* line 76, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* line 82, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.contenedor_muestras {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* line 88, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.cuerpo_contacto {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+/* line 94, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.header_contacto {
+  text-align: right;
+}
+
+/* line 98, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.boton_atras {
+  text-align: right;
+}
+
+/* line 101, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.header_artista {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+/* line 110, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.cuerpo_artistxs {
+  color: #fff;
+  flex: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: justify;
+  width: 70%;
+  padding-right: 60px;
+}
+
+/* line 122, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.field {
+  color: white;
+}
+
+/* unvisited link */
+/* line 127, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:link {
+  color: white;
+}
+
+/* visited link */
+/* line 132, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:visited {
+  color: white;
+}
+
+/* mouse over link */
+/* line 137, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:hover {
+  color: white;
+  font-size: 17px;
+  background: none;
+}
+
+/* selected link */
+/* line 144, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a.links_artistxs:active {
+  color: white;
+}
+
+/* line 147, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:link {
+  color: white;
+}
+
+/* visited link */
+/* line 152, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+/* line 157, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:hover {
+  color: white;
+  font-size: 29px;
+  background: none;
+}
+
+/* selected link */
+/* line 164, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a:active {
+  color: white;
+}
+
+/* line 167, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+
+/* line 173, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadeinlargo {
+  animation: fadein 2s;
+}
+
+/* line 177, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadeoutlargo {
+  animation: fadeout 2s;
+}
+
+@keyframes fadeinlargo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeoutlargo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 189, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadein {
+  animation: fadein 1s;
+}
+
+/* line 193, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.fadeout {
+  animation: fadeout 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* line 204, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_muestras {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Merriwheather', serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+/* line 212, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.recuadro_muestras {
+  float: left;
+  width: 50%;
+  border: 1px;
+  border-style: solid;
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 223, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.muestras {
+  font-size: 20px;
+  text-align: center;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 229, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.muestras:hover {
+  font-size: 21px;
+  color: grey;
+  text-align: center;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 237, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_sobrenos {
+  font-size: 27px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+/* line 246, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_artistxs {
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
+}
+
+/* line 255, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_muestras {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+/* line 264, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_contacto {
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+/* line 272, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.texto_contenedor_sobrenos {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: justify;
+}
+
+/* line 280, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.contenedor_sobrenosotros {
+  float: center;
+  width: 70%;
+  color: white;
+}
+
+/* line 286, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.menuinicio {
+  text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
+  padding: 100px;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  width: 50%;
+  height: auto;
+  text-decoration: none;
+}
+
+/* line 297, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.background {
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=4f4605ff&noise=1c011c&density=93&opacity=37");
+}
+
+/* line 305, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the tab */
+/* line 308, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.tab {
+  color: white;
+  font-size: 20px;
+  float: left;
+  border: 1px solid #ccc;
+  width: 30%;
+  height: auto;
+  text-decoration: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+/* line 318, /Users/martinfh/Desktop/web_constitucion/Constitucion/app/assets/stylesheets/application.css.scss */
+.tab button {
+  text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
+  font-family: sans-serif, helvetica;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  background-color: inherit;
+  color: red;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: crosshair;
+  transition: 0.3s;
+}
