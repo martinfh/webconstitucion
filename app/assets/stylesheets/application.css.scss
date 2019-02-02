@@ -14,6 +14,18 @@
  *= require_self
  */
 
+
+#footer {
+clear: both;
+height: 60px;
+width: 100%;
+float: right;
+text-align: right;
+color: white;
+padding-top: 230px;
+padding-bottom: 40px;
+padding-right: 40px;
+}
 .visordeimagenes{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -80,7 +92,7 @@
 
  .contenedor_textosala{
     flex: left;
-    width: 80%;
+    width: 50%;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;

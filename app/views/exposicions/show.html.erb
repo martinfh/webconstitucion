@@ -14,12 +14,15 @@
    &nbsp<br>
    <i><%= @exposicion.fechas %><br>
    </i></p>
-   <div class="contenedor_textosala">
-     Texto de sala<br>
+   <div class="contenedor_textosala w3-dropdown-click">
+     <button onclick="myFunction()" class="w3-button w3-black">Texto de sala</button>
+     <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
         <%= @exposicion.texto %>
+      </div>
+    </div>
    </div>
   </div>
-  <p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;"><%= link_to 'Descargar catálogo' %></p>
+  <p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;"><%= link_to 'Descargar gacetilla' %></p>
   <div class="visordeimagenes_expo">
         <p class="header_artista" style="padding-left: 230px;"><i>Imágenes Expo:</i></p>
         <%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>
@@ -34,6 +37,16 @@
       </div>
           <%end%>
    </div>
+   <script>
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
    <script type="text/javascript">
      var slideIndex = 1;
 showDivs(slideIndex);

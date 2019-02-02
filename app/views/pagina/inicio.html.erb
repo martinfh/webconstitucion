@@ -3,6 +3,13 @@
 <html>
 	<head>
 		<div>
+			<% if user_signed_in? %>
+  <button>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+  </button>
+  <%end%>
+		</div>
+		<div>
 			<%= image_tag 'fotos/ad_sinfondo.png',style:"height:100px";%>
 		</div>
 	</head>
@@ -21,7 +28,11 @@
 				<%= link_to 'Sobre nosotrxs', pagina_info_path, class: 'texto_sobrenos'%>
 			</p>
 	</div>
-
+	<footer>
+	<div id="footer" style="padding-bottom: 40px;">
+		<%=link_to (image_tag 'fotos/botonig.png',style:"height:50px"), "http://www.instagram.com/_constitucion_/"%>&nbsp<%=link_to (image_tag 'fotos/botonfb.png',style:"height:50px"), "http://www.facebook.com/constitucionespacio/"%>	
+				</div>
+</footer>
 </body>
 </html>
 	
