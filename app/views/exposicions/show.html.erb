@@ -10,19 +10,26 @@
 <body>
   <div>
   <p class="contenedor_muestras">
-   <%= @exposicion.titulo_expo %><br>
-    <%= @exposicion.fechas %><br>
-    Texto de sala<br>
-        <%= @exposicion.texto %></p>
+   <strong><%= @exposicion.titulo_expo %><br></strong>
+   &nbsp<br>
+   <i><%= @exposicion.fechas %><br>
+   </i></p>
+   <div class="contenedor_textosala">
+     Texto de sala<br>
+        <%= @exposicion.texto %>
+   </div>
   </div>
-  <div>
-        IMAGENES EXPO:
+  <p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;"><%= link_to 'Descargar catálogo' %></p>
+  <div class="visordeimagenes_expo">
+        <p class="header_artista" style="padding-left: 230px;"><i>Imágenes Expo:</i></p>
         <%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>
           <div class="w3-content w3-display-container">
+            
           <div class="mySlides">
-            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <%= image_tag(@exposicion.thumbnail(imagenes_expo))%>
-              <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+             <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            
+          <%= image_tag(@exposicion.thumbnail(imagenes_expo),style:"width:100%")%>
+           <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
       </div>
           <%end%>

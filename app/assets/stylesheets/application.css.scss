@@ -14,21 +14,15 @@
  *= require_self
  */
 
-.slider {
-    padding-top: 10px;
-}
 .visordeimagenes{
-    display: float;
-    justify-content: center;
-    align-items: center;
-    margin-left: 14%;
-    width: 65%;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: lighter;
-    color: white;
 }
 
+.visordeimagenes_expo{
+    
+}
 
 .caja_contacto{
     float: left;
@@ -49,8 +43,8 @@
 
  .column {
   float: left;
-  width: 33.33%;
-  padding: 50px;
+  width: 25%;
+  padding: 25px;
   text-align: center;
   font-size: 25px;
   cursor: pointer;
@@ -80,11 +74,22 @@
     color: #fff;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
+    padding-left: 30px;
+ }
+
+ .contenedor_textosala{
+    flex: left;
+    width: 80%;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 30px;
  }
 .cuerpo_contacto{
   font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: lighter;
     text-decoration: none;
 }
@@ -101,6 +106,7 @@
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 5px;
+    padding-left: 30px;
     text-decoration: none;
  }
 
@@ -114,6 +120,7 @@
     text-align: justify;
     width: 70%;
     padding-right: 60px;
+    padding-left: 30px;
  }
  
 .field{

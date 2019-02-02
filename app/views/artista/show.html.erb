@@ -6,6 +6,9 @@
 				<%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), artista_path %>
 			</div>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+.mySlides {display:none}
+</style>
 	</head>
 	<body>
 		<div>
@@ -14,19 +17,70 @@
 			<p class="cuerpo_artistxs">
 		  			<%= @artistum.cv %></p>
 		</div>
-		&nbsp
-		<div class="visordeimagenes">
-			SELECCIÓN DE OBRAS
-			<div class="w3-content w3-display-container">
+		<p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;"><%= link_to 'Descargar catálogo' %></p>
+		<p class="header_artista" style="padding-left: 25px;"><i>Selección de obras:</i></p>
+			<div class="row">
+
 					<%(0...@artistum.imagen.count).each do |imagen|%>
-				<div class="mySlides">
-					<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-					<%= image_tag(@artistum.thumbnail(imagen))%>
-					<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+					
+				<div class= "column">
+					<%= image_tag(@artistum.thumbnail(imagen), style:"width:100%", onclick:"openModal();currentDiv(1)")%>
+			</div>
+					<%end%>	
 				</div>
-					<%end%>			
+				<div id="myModal" class="w3-modal w3-black">
+ <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
+ <div>
+		 <div>
+					<%(0...@artistum.imagen.count).each do |imagen|%>
+					<div class="w3-content w3-display-container">
+				<div class="mySlides">
+					<span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+					<%= image_tag(@artistum.thumbnail(imagen))%>
+					<span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+				</div>
+					<%end%>		
 			</div>
 		 </div>
+		</div>
+		 <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 	<script type="text/javascript">
      var slideIndex = 1;
 showDivs(slideIndex);
