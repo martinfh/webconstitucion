@@ -9,7 +9,7 @@
 </head>
 <body>
   <div>
-  <p class="contenedor_muestras">
+  <p class="contenedor_muestras fadeinlargo">
    <strong><%= @exposicion.titulo_expo %><br></strong>
    &nbsp<br>
    <i><%= @exposicion.fechas %><br>
@@ -22,7 +22,11 @@
     </div>
    </div>
   </div>
-  <p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;"><%= link_to 'Descargar gacetilla' %></p>
+  <p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;">
+    <%if @exposicion.gacetilla.attached?%>
+    <%= link_to 'descargar gacetilla', @exposicion.gacetilla, disposition: :inline%>
+      <%end%>
+    </p>
   <div class="visordeimagenes_expo">
         <p class="header_artista" style="padding-left: 230px;"><i>Imágenes Expo:</i></p>
         <%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>

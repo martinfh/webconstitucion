@@ -70,6 +70,6 @@ class ArtistaController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def artistum_params
-      params.require(:artistum).permit(:nombre, :cv, imagen: [])
+      params.require(:artistum).permit(:nombre, :cv, :catalogo, imagen: [])
     end
 end

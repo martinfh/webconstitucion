@@ -17,9 +17,13 @@
 			<p class="cuerpo_artistxs">
 		  			<%= @artistum.cv %></p>
 		</div>
-		<p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;"><%= link_to 'Descargar catálogo' %></p>
+		<p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;">
+			<%if @artistum.catalogo.attached?%>
+			<%= link_to 'descargar cátalogo', @artistum.catalogo, disposition: :attachment%>
+				<%end%>
+			</p>
 		<p class="header_artista" style="padding-left: 25px;"><i>Selección de obras:</i></p>
-			<div class="row">
+			<div class="row fadeinlargo">
 
 					<%(0...@artistum.imagen.count).each do |imagen|%>
 					
