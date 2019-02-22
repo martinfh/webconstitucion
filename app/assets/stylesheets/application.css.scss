@@ -13,18 +13,45 @@
  *= require_tree .
  *= require_self
  */
+ .contenedor_forms {
+    padding-left: 50px;
+    padding-top: 40px;
+    color: white;
+ }
+ .letra_consti {
+    position: absolute;
+    float: left;
+    z-index: 3;
+    padding-left: 80px;
+    padding-top: 300px;
+ }
+ .contenedor_sobrenosotros {
+    position: absolute;
+    z-index: 2;
+    float: left;
+    width: 50%;
+    color:white;
+    padding-left: 60px;
 
+}
+.foto_frenteconsti {
+    float: right;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    padding-left: 170px;
+}
 
 #footer {
-clear: both;
-height: 60px;
-width: 100%;
-float: right;
-text-align: right;
-color: white;
-padding-top: 230px;
-padding-bottom: 40px;
-padding-right: 40px;
+    clear: both;
+    height: 60px;
+    width: 100%;
+    float: right;
+    text-align: right;
+    color: white;
+    padding-top: 230px;
+    padding-bottom: 40px;
+    padding-right: 40px;
 }
 .visordeimagenes{
     font-family: 'Raleway', sans-serif;
@@ -292,12 +319,6 @@ animation: fadeout 1s;
     font-weight: lighter;
     text-decoration: none;
     text-align: justify;
-}
-.contenedor_sobrenosotros {
-    float: center;
-    width: 70%;
-    color:white;
-
 }
 .menuinicio {
     text-shadow: 3px 1px 17px rgba(0, 0, 0, 0.97);
