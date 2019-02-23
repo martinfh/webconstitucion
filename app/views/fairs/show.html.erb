@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @fair.nombre %>
+</p>
+
+<p>
+  <strong>Flyer:</strong>
+  <%= @fair.flyer %>
+</p>
+
+<%= link_to 'Edit', edit_fair_path(@fair) %> |
+<%= link_to 'Back', fairs_path %>

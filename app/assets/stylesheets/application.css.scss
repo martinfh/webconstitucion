@@ -13,6 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+
+.cuadro_ferias {
+    display: flex;
+    float: left;
+    width: 27%;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+
+}
  .contenedor_forms {
     padding-left: 50px;
     padding-top: 40px;
@@ -49,7 +60,7 @@
     float: right;
     text-align: right;
     color: white;
-    padding-top: 230px;
+    padding-top: 200px;
     padding-bottom: 40px;
     padding-right: 40px;
 }
@@ -284,6 +295,14 @@ animation: fadeout 1s;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+}
+.texto_ferias {
+    font-size: 27px;
+    color:#FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic;
 }
 
 .texto_artistxs {

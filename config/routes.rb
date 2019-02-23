@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :fairs
+  resources :ferias
   devise_for :users
   resources :exposicions
   get 'pagina/inicio'

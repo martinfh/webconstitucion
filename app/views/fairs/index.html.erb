@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <%= if user_signed_in?
+  link_to 'New Fair', new_fair_path 
+  end%>
+  <div class="boton_atras">
+        <%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), pagina_inicio_path %>
+      </div>
+</head>
+<body>
+  <div class="header_artista">
+    FERIAS
+  </div>
+  <div class="cuadro_ferias">
+    <% @fairs.each do |fair| %>
+      <ul>
+        <%= fair.nombre %><br>
+       <%= image_tag url_for(fair.flyer) %><br>
+       <%=if user_signed_in?
+         link_to 'Show', fair 
+         link_to 'Edit', edit_fair_path(fair)
+       link_to 'Destroy', fair, method: :delete, data: { confirm: 'Are you sure?' } end%>
+      </ul>
+    <% end %>
+  </div>
+</body>
+</html>

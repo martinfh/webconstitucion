@@ -5,5 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          has_many :artistum
          has_many :exposicion
+         has_many :feria
          
 end
