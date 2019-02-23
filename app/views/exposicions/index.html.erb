@@ -6,7 +6,7 @@
     	<% @exposicions.each do |exposicion| %>
       	<%= link_to exposicion.titulo_expo, exposicion_path(exposicion.id), :class => "muestras"%>
     <p> <%=if user_signed_in?
-    			link_to 'Destroy', exposicion, method: :delete, data: { confirm: 'Are you sure?' }
+    			link_to 'Destroy', exposicion, method: :destroy, data: { confirm: 'Are you sure?' }
     			end%>
     		</p>
     		
