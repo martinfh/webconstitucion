@@ -18,7 +18,7 @@
 	<div class= "menuinicio fadeinlargo">
 			<p style= "cursor: pointer;"class= "texto_artistxs" onclick="myAccFunc()"> 
         ARTISTXS</p>
-      <div id="demoAcc" class="w3-hide w3-animate-right">
+      <div id="demoAcc" class="w3-hide">
         <% @artista.each do |artistum|%>
           <p> <%=link_to artistum.nombre, artistum_path(artistum.id),:class=>"link_artistxs"%></p>
         <%end%>
