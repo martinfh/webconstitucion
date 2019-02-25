@@ -2,12 +2,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <div class="boton_atras">
         <%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), pagina_inicio_path %>
       </div>
     <title>ARTISTXS</title>
   </head>
   <body>
+    
     <div class="botones_artistas" style="align-content: center;">
       <div class="tab">
         <% @artista.each do |artistum| %>
@@ -27,5 +29,19 @@
           link_to 'Nuevo Artistx', new_artistum_path
                 end%>
               </div>
+              <script>
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-green";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-green", "");
+  }
+}
+
+</script>
   </body>
 </html>

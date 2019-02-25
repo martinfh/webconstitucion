@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<div>
 			<% if user_signed_in? %>
   <div>
@@ -15,25 +16,42 @@
 	</head>
 <body>
 	<div class= "menuinicio fadeinlargo">
-			<p>
-				<%= link_to 'ARTISTXS', artista_path, class: 'texto_artistxs'%>
-			</p>
+			<p style= "cursor: pointer;"class= "texto_artistxs" onclick="myAccFunc()"> 
+        ARTISTXS</p>
+      <div id="demoAcc" class="w3-hide w3-animate-right">
+        <% @artista.each do |artistum|%>
+          <p> <%=link_to artistum.nombre, artistum_path(artistum.id),:class=>"link_artistxs"%></p>
+        <%end%>
+        </div>
 			<p>
 				<%= link_to 'MUESTRAS', exposicions_path, class: 'texto_muestras'%>
 			</p>
-			<p>
+			<p style="padding-top: 7px;">
 				<%= link_to 'Ferias', fairs_path, class: 'texto_ferias'%>
 			</p>
-			<p>
+			<p style="padding-top: 7px;">
 				<%= link_to 'Contacto', pagina_contacto_path, class: 'texto_contacto'%>
 			</p>
-			<p>
+			<p style="padding-top: 7px;">
 				<%= link_to 'Sobre nosotrxs', pagina_info_path, class: 'texto_sobrenos'%>
 			</p>
 	</div>
+
+	<script type="text/javascript">
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-green", "");
+  }
+}
+</script>
 	<footer>
 	<div id="footer" style="padding-bottom: 60px;">
-		<%=link_to (image_tag 'fotos/botonig.png',style:"height:50px"), "http://www.instagram.com/_constitucion_/"%>&nbsp<%=link_to (image_tag 'fotos/botonfb.png',style:"height:50px"), "http://www.facebook.com/constitucionespacio/"%>	
+		<%=link_to (image_tag 'fotos/botonig.png',style:"height:50px"), "http://www.instagram.com/_constitucion_/"%>&nbsp<%=link_to (image_tag 'fotos/botonfb.png',style:"height:50px;padding-left:5px;"), "http://www.facebook.com/constitucionespacio/"%>	
 				</div>
 </footer>
 </body>

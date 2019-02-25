@@ -60,7 +60,7 @@
     float: right;
     text-align: right;
     color: white;
-    padding-top: 200px;
+    padding-top: 170px;
     padding-bottom: 40px;
     padding-right: 40px;
 }
@@ -224,6 +224,12 @@ a:active {
     font-weight: lighter;
     color: #fff;
  }
+
+ .texto_artistxs:hover {
+    color: white;
+    font-size: 28px;
+ background: none;
+}
  .fadeinlargo{
 animation: fadein 2s;
  }
@@ -295,6 +301,7 @@ animation: fadeout 1s;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+
 }
 .texto_ferias {
     font-size: 27px;
@@ -303,6 +310,7 @@ animation: fadeout 1s;
     text-align: left;
     font-family: "Times New Roman", Times, serif;
     font-style:italic;
+    
 }
 
 .texto_artistxs {
@@ -321,7 +329,6 @@ animation: fadeout 1s;
     text-align: center;
     font-family: 'Merriweather', serif;
     font-weight: bold;
-
 }
 .texto_contacto {
     font-size: 27px;
