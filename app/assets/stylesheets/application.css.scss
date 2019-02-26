@@ -17,8 +17,8 @@
 
 .cuadro_ferias {
     display: flex;
-    float: left;
-    width: 27%;
+    flex-direction: column-reverse;
+    width: 100%;
     font-size: 25px;
     color: #fff;
     font-family: 'Raleway', sans-serif;

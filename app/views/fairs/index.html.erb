@@ -15,14 +15,14 @@
   </div>
   <div class="cuadro_ferias">
     <% @fairs.each do |fair| %>
-      <ul>
+      <div style="padding: 30px;">
         <%= fair.nombre %><br>
        <%= image_tag url_for(fair.flyer) %><br>
        <%=if user_signed_in?
          link_to 'Show', fair 
          link_to 'Edit', edit_fair_path(fair)
        link_to 'Destroy', fair, method: :delete, data: { confirm: 'Are you sure?' } end%>
-      </ul>
+      </div>
     <% end %>
   </div>
 </body>
