@@ -16,9 +16,8 @@
             <button>
               <%=link_to artistum.nombre, artistum_path(artistum.id),:class=>"links_artistxs"%>
               <p> 
-              <%=if user_signed_in?
-          link_to 'Eliminar', artistum_path(artistum), method: :delete
-                end%>
+             <%=if user_signed_in?
+         button_to "Delete", artistum_path(artistum), method: :delete end%>
               </p>
             </button>
             <% end %>

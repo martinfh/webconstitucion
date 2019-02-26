@@ -21,7 +21,7 @@
        <%=if user_signed_in?
          link_to 'Show', fair 
          link_to 'Edit', edit_fair_path(fair)
-       link_to 'Destroy', fair, method: :delete, data: { confirm: 'Are you sure?' } end%>
+       button_to 'Destroy', fair_path(fair), method: :delete end%>
       </div>
     <% end %>
   </div>
