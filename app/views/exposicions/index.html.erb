@@ -2,6 +2,11 @@
 <div class="boton_atras">
 				<%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), pagina_inicio_path %>
 			</div>
+            <div> 
+              <%=if user_signed_in?
+          link_to 'Nueva expo', new_exposicion_path
+                end%>
+              </div>
 <div class="recuadro_muestras">
     	<% @exposicions.each do |exposicion| %>
       	<%= link_to exposicion.titulo_expo, exposicion_path(exposicion.id), :class => "muestras"%>
