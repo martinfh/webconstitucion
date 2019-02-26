@@ -270,26 +270,26 @@ animation: fadeout 1s;
     font-size: 20px;
 }
 .recuadro_muestras{
-    float: left;
+    display: flex;
+    flex-direction: column-reverse;
     width: 50%;
     border: 1px;
     border-style: solid;
     padding: 10px;
     font-size:20px;
     text-align: right;
-    width: auto;
     text-decoration: none;
 }
 .muestras{
     font-size:20px;
-    text-align: center;
+    text-align: left;
     width: auto;
     text-decoration: none;
 }
 .muestras:hover {
     font-size:21px;
     color:grey;
-    text-align: center;
+    text-align: left;
     width: auto;
     text-decoration: none;
 
