@@ -55,6 +55,7 @@ class ArtistaController < ApplicationController
   # DELETE /artista/1
   # DELETE /artista/1.json
   def destroy
+    @artistum = Artistum.find(params[:id])
     @artistum.destroy
     respond_to do |format|
       format.html { redirect_to artista_url, notice: 'Artistum was successfully destroyed.' }
