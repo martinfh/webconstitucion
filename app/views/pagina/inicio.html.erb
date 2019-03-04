@@ -6,7 +6,7 @@
 		<div>
 			<% if user_signed_in? %>
   <div>
-  <%= link_to('Logout', destroy_user_session_path, method: :destroy) %>        
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
   </div>
   <%end%>
 		</div>
@@ -27,13 +27,13 @@
 				<%= link_to 'MUESTRAS', exposicions_path, class: 'texto_muestras'%>
 			</p>
 			<p style="padding-top: 7px;">
+				<%= link_to 'Nosotrxs', pagina_info_path, class: 'texto_sobrenos'%>
+			</p>
+			<p style="padding-top: 7px;">
 				<%= link_to 'Ferias', fairs_path, class: 'texto_ferias'%>
 			</p>
 			<p style="padding-top: 7px;">
-				<%= link_to 'Contacto', pagina_contacto_path, class: 'texto_contacto'%>
-			</p>
-			<p style="padding-top: 7px;">
-				<%= link_to 'Sobre nosotrxs', pagina_info_path, class: 'texto_sobrenos'%>
+				<%= link_to 'Noticias', noticia_path, class: 'texto_contacto'%>
 			</p>
 	</div>
 <script>

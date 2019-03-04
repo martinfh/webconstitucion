@@ -1,0 +1,37 @@
+<head>
+  <%= if user_signed_in?
+  link_to 'Nueva noticia', new_noticium_path 
+  end%>
+  <div class="boton_atras">
+        <%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), pagina_inicio_path %>
+      </div>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <th style="width: 50%; color: white; font-family: 'Raleway', sans-serif; font-size: 25px; text-align: left;">
+        Noticias
+      </th>
+      <th width="50%">.
+      </th>
+    </thead>
+    <tbody>
+      <% @noticia.each do |noticium| %>
+      <tr>
+        <td style="border-right: 2px solid white; border-collapse: separate;
+    border-spacing: 15px; color: white; font-family: 'Raleway', sans-serif; font-size: 13px; text-align: left;">
+          <%= noticium.title %>
+        </td>
+        <td style="padding-left: 20px; ">
+          <%= image_tag url_for(noticium.cuerpo) %>
+        </td>
+      </tr>
+      <%=if user_signed_in?
+          button_to 'Show', noticium 
+          button_to 'Edit', edit_noticium_path(noticium)
+        button_to 'Destroy', noticium_path(noticium), method: :delete end%>
+    <%end%>
+    </tbody>
+  </table>
+</body>

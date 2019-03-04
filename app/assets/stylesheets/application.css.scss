@@ -14,6 +14,34 @@
  *= require_self
  */
 
+.contenedor_noticias{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+ }
+
+.cuerpo_noticias {
+    display: flex;
+    width: 50%;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 35px;
+    padding-top: 35px;
+    border-right: 2px solid white;
+    border-collapse: separate;
+    border-spacing: 15px;
+    flex-direction: row;
+
+ }
+.foto_noticias {
+    display: flex;
+    width: 50%;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding:35px;
+}
 
 .cuadro_ferias {
     display: flex;
@@ -70,15 +98,25 @@
     font-weight: lighter;
 }
 
-.visordeimagenes_expo{
-    
-}
-
 .caja_contacto{
-    float: left;
-    width: 50%;
-    padding: 35px;
-    background-color: rgba(86, 86, 86, 0.5)
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    width: 600px;
+    padding-top: 200px;
+    padding-left: 450px;
+    text-align:right;
+
+}
+.cuerpo_contacto{
+  font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+     background-color: rgba(86, 86, 86, 0.8);
+     padding: 35px;
+     padding-left: 100px;
+
 }
  .header_contacto{
     display: grid;
@@ -137,12 +175,7 @@
     font-size: 13px;
     padding-left: 30px;
  }
-.cuerpo_contacto{
-  font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    text-decoration: none;
-}
+
 .header_contacto{
     text-align: right;
 }

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :noticia
   resources :fairs
   resources :ferias
   devise_for :users
