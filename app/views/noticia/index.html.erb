@@ -19,6 +19,10 @@
     <tbody>
       <% @noticia.each do |noticium| %>
       <tr>
+        <%=if user_signed_in?
+          button_to 'Show', noticium 
+          button_to 'Edit', edit_noticium_path(noticium)
+        button_to 'Destroy', noticium_path(noticium), method: :delete end%>
         <td style="border-right: 2px solid white; border-collapse: separate;
     border-spacing: 15px; color: white; font-family: 'Raleway', sans-serif; font-size: 13px; text-align: left;">
           <%= noticium.title %>
@@ -27,10 +31,6 @@
           <%= image_tag url_for(noticium.cuerpo) %>
         </td>
       </tr>
-      <%=if user_signed_in?
-          button_to 'Show', noticium 
-          button_to 'Edit', edit_noticium_path(noticium)
-        button_to 'Destroy', noticium_path(noticium), method: :delete end%>
     <%end%>
     </tbody>
   </table>
