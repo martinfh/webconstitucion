@@ -19,89 +19,30 @@
 		</div>
 		<p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;">
 			<%if @artistum.catalogo.attached?%>
-			<%= link_to 'descargar cátalogo', @artistum.catalogo, disposition: :attachment%>
+			<%= link_to 'descargar cátalogo', @artistum.catalogo, disposition: :inline%>
 				<%end%>
 			</p>
 		<p class="header_artista" style="padding-left: 25px;"><i>Selección de obras:</i></p>
-			<div class="row fadeinlargo">
+		<div class="row fadeinlargo">
 
 					<%(0...@artistum.imagen.count).each do |imagen|%>
 					
 				<div class= "column">
-					<%= image_tag(@artistum.thumbnail(imagen), style:"width:100%", onclick:"openModal();currentDiv(1)")%>
+					<%= image_tag(@artistum.thumbnail(imagen), style:"width:100%", onclick:"onClick(this)", class:"w3-hover-opacity")%>
 			</div>
 					<%end%>	
 				</div>
-				<div id="myModal" class="w3-modal w3-black">
- <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright" onclick="closeModal()" style="cursor:pointer">×</span>
- <div>
-		 <div>
-					<%(0...@artistum.imagen.count).each do |imagen|%>
-					<div class="w3-content w3-display-container">
-				<div class="mySlides">
-					<span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
-					<%= image_tag(@artistum.thumbnail(imagen))%>
-					<span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
-				</div>
-					<%end%>		
-			</div>
-		 </div>
-		</div>
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+			
 		 <script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-	<script type="text/javascript">
-     var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  x[slideIndex-1].style.display = "block"; 
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
 }
    </script>
 				
