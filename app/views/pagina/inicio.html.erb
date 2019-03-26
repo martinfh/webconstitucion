@@ -17,7 +17,7 @@
 <body>
 	<div class= "menuinicio fadeinlargo">
 			<p style= "cursor: pointer;"class= "texto_artistxs" onclick="myFunction('Demo1')"> 
-        ARTISTXS</p>
+        ARTISTAS</p>
       <div id="Demo1" class="w3-hide w3-animate-right">
         <% @artista.each do |artistum|%>
           <p> <%=link_to artistum.nombre, artistum_path(artistum.id)%></p>

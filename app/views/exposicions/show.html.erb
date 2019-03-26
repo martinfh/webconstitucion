@@ -16,8 +16,8 @@
    </i></p>
    <div class="contenedor_textosala w3-dropdown-click">
      <button onclick="myFunction()" class="w3-button w3-black">Texto de sala</button>
-     <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom">
-        <%= @exposicion.texto %>
+     <div id="Demo" class="w3-dropdown-content w3-animate-left"conteneditable="true">
+        <%= sanitize (@exposicion.texto) %>
       </div>
     </div>
    </div>
