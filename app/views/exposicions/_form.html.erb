@@ -1,9 +1,8 @@
 <head>
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" type="text/css" href="trix.css">
+    <link rel="stylesheet" type="text/css" href="trix.css">
   <script type="text/javascript" src="trix.js"></script>
 </head>
-
 <%= form_with(model: exposicion, local: true) do |form| %>
   <% if exposicion.errors.any? %>
     <div id="error_explanation">
@@ -29,8 +28,8 @@
 
   <div class="field">
     <%= form.label :texto %>
-    <%= form.hidden_field :texto, id: :exposicion_texto%>
-    <input> name=""><trix-editor input="exposicion_texto" style="background-color: white;color: black;"></trix-editor></input>
+    <%= hidden_field :texto, id: :exposicion_texto%>
+    <trix-editor input="exposicion_texto"></trix-editor>
   </div>
 
   <div class="field">
