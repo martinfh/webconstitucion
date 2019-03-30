@@ -1,5 +1,7 @@
 {
   "name": "Constitucion",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "actiontext": "https://github.com/kobaltz/actiontext"
+  }
 }

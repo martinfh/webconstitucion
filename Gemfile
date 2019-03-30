@@ -34,7 +34,7 @@ gem 'devise', '~> 4.2'
 gem 'mini_magick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'trix-rails', require: 'trix'
+gem 'tinymce-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

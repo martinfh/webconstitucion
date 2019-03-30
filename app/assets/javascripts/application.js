@@ -15,7 +15,7 @@
 //= require activestorage
 //= require turbolinks
 //= require turbolinks_transitions
-//= require trix
+//= require tinymce
 //= require_tree .
 
 

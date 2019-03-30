@@ -1,7 +1,7 @@
 <head>
    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="trix.css">
-  <script type="text/javascript" src="trix.js"></script>
+ <%= tinymce_assets %>
+
 </head>
 <%= form_with(model: exposicion, local: true) do |form| %>
   <% if exposicion.errors.any? %>
@@ -28,8 +28,10 @@
 
   <div class="field">
     <%= form.label :texto %>
-    <%= hidden_field :texto, id: :exposicion_texto%>
-    <trix-editor input="exposicion_texto"></trix-editor>
+  <%= form.text_area :texto, :class=> "tinymce" %>
+  <%= tinymce %>
+</div>
+
   </div>
 
   <div class="field">

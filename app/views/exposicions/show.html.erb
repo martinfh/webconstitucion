@@ -6,6 +6,7 @@
         <%=link_to (image_tag 'fotos/flecha_atras.png',style:"height:50px"), exposicions_path %>
       </div>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=xor8lr2vkogt8v3iuktbc451kqgubv4jh2e6wqv5ab0u2u8f"></script>
 </head>
 <body>
   <div>
@@ -17,7 +18,7 @@
    <div class="contenedor_textosala w3-dropdown-click">
      <button onclick="myFunction()" class="w3-button w3-black">Texto de sala</button>
      <div id="Demo" class="w3-dropdown-content w3-animate-left"conteneditable="true">
-        <%= sanitize (@exposicion.texto) %>
+        <%= sanitize (@exposicion.texto)%>
       </div>
     </div>
    </div>
@@ -72,5 +73,6 @@ function showDivs(n) {
    </script>
 </body>
 <footer style="height: 30px;">
+  <%= tinymce %>
 </footer>
 </html>

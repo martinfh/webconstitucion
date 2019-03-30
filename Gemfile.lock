@@ -198,8 +198,8 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    trix-rails (2.0.0)
-      rails (> 4.1, < 6.0)
+    tinymce-rails (5.0.3)
+      railties (>= 3.1.1)
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -244,7 +244,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  trix-rails
+  tinymce-rails
   turbolinks (~> 5)
   turbolinks_transitions
   tzinfo-data
