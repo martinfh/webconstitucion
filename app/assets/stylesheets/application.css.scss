@@ -82,13 +82,14 @@
 }
 
 #footer {
-    clear: both;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     height: 60px;
     width: 100%;
     float: right;
     text-align: right;
     color: white;
-    padding-top: 170px;
     padding-bottom: 40px;
     padding-right: 40px;
 }
