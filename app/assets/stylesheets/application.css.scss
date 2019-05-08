@@ -12,7 +12,10 @@
  *= require_tree .
  *= require_self
  */
-
+.imagen_feria {
+    padding-left: 20px; 
+    object-fit: contain;
+}
 
 .contenedor_noticias{
     display: flex;

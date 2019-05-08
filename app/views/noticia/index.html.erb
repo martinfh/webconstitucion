@@ -26,8 +26,10 @@
     border-spacing: 15px; color: white; font-family: 'Raleway', sans-serif; font-size: 13px; text-align: left;">
           <%= noticium.title %>
         </td>
-        <td style="padding-left: 20px; ">
-          <%= image_tag url_for(noticium.cuerpo), style:"width:650px;"%>
+        <td>
+          <div class="imagen_feria">
+          <%= image_tag url_for(noticium.cuerpo)%>
+          </div>      
         </td>
       </tr>
     <%end%>
