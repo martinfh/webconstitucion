@@ -31,12 +31,12 @@
   <div class="visordeimagenes_expo">
         <p class="header_artista" style="padding-left: 230px;"><i>Imágenes Expo:</i></p>
         <%(0...@exposicion.imagenes_expo.count).each do |imagenes_expo|%>
-          <div class="w3-content w3-display-container" style="width: 800px;">
+          <div class="w3-content w3-display-container" style="width: 800px; max-height: 600px;">
             
           <div class="mySlides">
              <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             
-          <%= image_tag(@exposicion.thumbnail(imagenes_expo),style:"width:800px;")%>
+          <%= image_tag(@exposicion.thumbnail(imagenes_expo),style:"align:center;max-width:800px;width:auto; max-height:600px;")%>
            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
         </div>
       </div>
